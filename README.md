@@ -18,18 +18,24 @@ jko.getWith주격조사("그 여자") // "그 여자가"
 
 jko.getWith목적격조사_을_를("3개의 문장") // "3개의 문장을"
 jko.getWith목적격조사_을_를("12개의 단어") // "12개의 단어를"
+jko.getWith목적격조사("12개의 단어") // "12개의 단어를"
 
-jko.getWith보조사_은_는("그 사람")
-jko.getWith보조사_은_는("그 여자")
+jko.getWith보조사_은_는("그 사람") // 그 사람은
+jko.getWith보조사_은_는("그 여자") // 그 여자는
+jko.getWith보조사("그 여자") // 그 여자는
 
-jko.getWith호격조사_아_야("이 세상")
-jko.getWith호격조사_아_야("이 여자")
+jko.getWith호격조사_아_야("이 세상") // 이 세상아!
+jko.getWith호격조사_아_야("이 여자") // 이 여자야!
+jko.getWith호격조사("이 여자") // 이 여자야
 
 jko.getWith부사격조사("오늘") // 오늘로
 jko.getWith부사격조사_으로_로("오늘") // 오늘로
 jko.getWith부사격조사_으로_로("집") // 집으로
 jko.getWith부사격조사_으로_로("학교") // 학교로
 ```
+
+
+
 
 ## Requirements
 
