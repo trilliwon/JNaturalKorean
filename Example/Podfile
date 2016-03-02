@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'JNaturalKorean_Example', :exclusive => true do
+  pod 'JNaturalKorean', :path => '../'
+end
+
+target 'JNaturalKorean_Tests', :exclusive => true do
+  pod 'JNaturalKorean', :path => '../'
+
+  
+end
