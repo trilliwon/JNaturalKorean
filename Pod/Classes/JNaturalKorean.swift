@@ -7,13 +7,13 @@
 //
 import Foundation
 
-class JNaturalKorean: NSObject {
+public class JNaturalKorean: NSObject {
   
   let baseCode = 44032
   let choSung = 588
   let jungSung = 28
   
-  override init(){
+  public override init(){
     super.init()
   }
   // 초성리스트 00~18
@@ -23,12 +23,12 @@ class JNaturalKorean: NSObject {
   // 종성리스트 00~27 + 1 (1개 없음)
   let jongSungList = [" ", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ", "ㅁ", "ㅂ", "ㅄ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"]
   
-  func getWith주격조사_이_가(word: String) -> String {
+  public func getWith주격조사_이_가(word: String) -> String {
     return getWith주격조사(word)
   }
   
   // 주격조사 : 이/가 [ex: 그사람이, 내가]
-  func getWith주격조사(word: String) -> String {
+  public func getWith주격조사(word: String) -> String {
     if isHangul(word) {
       if isThere종성(word) {
         return "\(word)이"
@@ -39,12 +39,12 @@ class JNaturalKorean: NSObject {
     return ""
   }
   
-  func getWith보조사_은_는(word: String) -> String{
+  public func getWith보조사_은_는(word: String) -> String{
     return getWith보조사(word)
   }
   
   // 보조사 : 은/는 [ex: 그사람은, 나는]
-  func getWith보조사(word: String) -> String {
+  public func getWith보조사(word: String) -> String {
     if isHangul(word) {
       if isThere종성(word) {
         return "\(word)은"
@@ -55,12 +55,12 @@ class JNaturalKorean: NSObject {
     return ""
   }
   
-  func getWith목적격조사_을_를(word: String) -> String{
+  public func getWith목적격조사_을_를(word: String) -> String{
     return getWith목적격조사(word)
   }
   
   // 목적격조사 : 을/를 [ex: 그사람을, 나를]
-  func getWith목적격조사(word: String) -> String {
+  public func getWith목적격조사(word: String) -> String {
     if isHangul(word) {
       if isThere종성(word) {
         return "\(word)을"
@@ -71,21 +71,21 @@ class JNaturalKorean: NSObject {
     return ""
   }
   
-  func getWith보격조사_이_가(word: String) -> String {
+  public func getWith보격조사_이_가(word: String) -> String {
     return getWith보격조사(word)
   }
   
   // 보격조사 : 이/가 [ex: 그사람이, 내가]
-  func getWith보격조사(word: String) -> String {
+  public func getWith보격조사(word: String) -> String {
     return self.getWith주격조사(word)
   }
   
-  func getWith부사격조사_으로_로(word: String) ->String {
+  public func getWith부사격조사_으로_로(word: String) ->String {
     return getWith부사격조사(word)
   }
   
   // 부사격조사 : 으로/로 [ex: 집으로, 학교로, *오늘로]
-  func getWith부사격조사(word: String) -> String {
+  public func getWith부사격조사(word: String) -> String {
     if isHangul(word) {
       if isㄹ종성(word) {
         return "\(word)로"
@@ -100,12 +100,12 @@ class JNaturalKorean: NSObject {
     return ""
   }
   
-  func getWith호격조사_아_야(word: String) -> String {
+  public func getWith호격조사_아_야(word: String) -> String {
     return getWith호격조사(word)
   }
   
   // 호격조사: 아/야 [ex: 이사람아, 영희야]
-  func getWith호격조사(word: String) -> String {
+  public func getWith호격조사(word: String) -> String {
     if isHangul(word) {
       if isThere종성(word) {
         return "\(word)아"
