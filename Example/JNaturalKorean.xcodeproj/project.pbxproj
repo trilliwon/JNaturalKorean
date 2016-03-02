@@ -10,10 +10,10 @@
 		5D2AFDCE9BF38E9930702502 /* Pods_JNaturalKorean_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72C4002765169AD4AA1A907 /* Pods_JNaturalKorean_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		DB5D83751C87282200DAF647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5D83741C87282200DAF647 /* Main.storyboard */; };
 		E67BB9ABD4B4FF3A0BAEBDDF /* Pods_JNaturalKorean_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18196D2A5CC553AFEBC60A55 /* Pods_JNaturalKorean_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,6 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* JNaturalKorean_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JNaturalKorean_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		8F609D828CE3CF0F89C4D63D /* Pods-JNaturalKorean_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNaturalKorean_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JNaturalKorean_Tests/Pods-JNaturalKorean_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A79B40486391A73AB564643F /* JNaturalKorean.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JNaturalKorean.podspec; path = ../JNaturalKorean.podspec; sourceTree = "<group>"; };
 		CBFFB25BD34FE7C42D9E0974 /* Pods-JNaturalKorean_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNaturalKorean_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JNaturalKorean_Example/Pods-JNaturalKorean_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DB5D83741C87282200DAF647 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DE1482CFFE089AD912E7DE73 /* Pods-JNaturalKorean_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNaturalKorean_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JNaturalKorean_Example/Pods-JNaturalKorean_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DE398FB8D1411D572FDE339C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E72C4002765169AD4AA1A907 /* Pods_JNaturalKorean_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JNaturalKorean_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +104,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				DB5D83741C87282200DAF647 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -246,7 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				DB5D83751C87282200DAF647 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -383,14 +383,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

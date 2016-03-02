@@ -1,40 +1,18 @@
-#
-# Be sure to run `pod lib lint JNaturalKorean.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "JNaturalKorean"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of JNaturalKorean."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JNaturalKorean"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.version          = '0.1.1'
+  s.summary          = 'This supports to set Natural Korean Sentences.'
+  s.homepage         = "https://github.com/trillione/JNaturalKorean"
   s.license          = 'MIT'
   s.author           = { "trillione" => "trillione1024@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JNaturalKorean.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/trillione/JNaturalKorean.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/JNaturalKorean.swift'
   s.resource_bundles = {
     'JNaturalKorean' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
