@@ -1,4 +1,4 @@
-Pod::Spec.new do |s|
+Pod::Spec.new do |spec|
   s.name             = 'JNaturalKorean'
   s.version          = '0.1.1'
   s.summary          = 'This supports to set Natural Korean Sentences.'
