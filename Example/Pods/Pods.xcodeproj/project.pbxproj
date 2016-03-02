@@ -10,14 +10,14 @@
 		1149B7B9F4015994CB2DDAE5CADAF5FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		1C9E31B37B316E2B85F165ABD8A9BDB1 /* Pods-JNaturalKorean_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 802D5BD311140243B6439F37E53A8478 /* Pods-JNaturalKorean_Tests-dummy.m */; };
 		2CF2A5C0E1D322DFD6DB637BEBF1A0A8 /* JNaturalKorean.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 25EE4714C2F2623CDAB857F2E7CC9617 /* JNaturalKorean.bundle */; };
-		4A17F5E0554445C322E089A48EB8E63F /* JNaturalKorean-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2E735E42754A61B78540A1B921D50 /* JNaturalKorean-dummy.m */; };
+		618D3719A9FB3612B404C2E593BACF15 /* JNaturalKorean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC8DFF8F434E59D6CEA4D237DA2863 /* JNaturalKorean.swift */; };
 		6D074D9BF831660586340B03ABFE5A44 /* Pods-JNaturalKorean_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83430D21AC4B1BBAEF76D2F768DAE561 /* Pods-JNaturalKorean_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F3CE8C17B033AD4379C03245A33E8AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		78B252797971A5C73AF915BF222EC799 /* JNaturalKorean-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2E735E42754A61B78540A1B921D50 /* JNaturalKorean-dummy.m */; };
 		9FD9F376A84D34E1C1FABB97C1419AE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		A88FBD8CCE2B6AE2C886A6C48C23C8AE /* JNaturalKorean-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD49CFCDB48AD56977709BEA4F96D85 /* JNaturalKorean-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE6A64A9C4DB1D467A8C2C398C787201 /* Pods-JNaturalKorean_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C56B31D64957C59BD4DF28A870A03E /* Pods-JNaturalKorean_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5B032F3CC931DC315788AC351B78557 /* Pods-JNaturalKorean_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B44DD4B4E8EA9EFF7DCBA7EFB419B476 /* Pods-JNaturalKorean_Example-dummy.m */; };
-		DB89700E5DC77146ABEE0A19C3F2459F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D33C618F09E7CEC0574A2A2ABD66DB /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 /* Begin PBXFileReference section */
 		0F7F82FDFADCDF64868AF245E47B7C2D /* Pods-JNaturalKorean_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JNaturalKorean_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1AB93BD591FB29797926AD1559048661 /* JNaturalKorean.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JNaturalKorean.xcconfig; sourceTree = "<group>"; };
-		20D33C618F09E7CEC0574A2A2ABD66DB /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		25EE4714C2F2623CDAB857F2E7CC9617 /* JNaturalKorean.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JNaturalKorean.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C4AC7DCC020402E33058D4F0FB3F19 /* JNaturalKorean.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JNaturalKorean.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D3D95C72826023C77AFA7E1B6FFBFA /* Pods-JNaturalKorean_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JNaturalKorean_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		B44DD4B4E8EA9EFF7DCBA7EFB419B476 /* Pods-JNaturalKorean_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JNaturalKorean_Example-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA59B9E537EF01C793935500A7352B8E /* Pods-JNaturalKorean_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JNaturalKorean_Example.modulemap"; sourceTree = "<group>"; };
+		DDEC8DFF8F434E59D6CEA4D237DA2863 /* JNaturalKorean.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JNaturalKorean.swift; sourceTree = "<group>"; };
 		DE813BEBE196FB4016F92EBC275DDD6A /* Pods-JNaturalKorean_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JNaturalKorean_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DF88D55255395AE7B8D9B07A7CFDC513 /* Pods-JNaturalKorean_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JNaturalKorean_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6A1BB283CA1EE8AE516DF2CFE81F4EA /* Pods_JNaturalKorean_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JNaturalKorean_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,10 +115,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4FB545B6EF68EED7F71047FF0BBE2B7B /* Classes */ = {
+		228BB5C2563E0369E2E123E0802A0529 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				20D33C618F09E7CEC0574A2A2ABD66DB /* ReplaceMe.swift */,
+				DDEC8DFF8F434E59D6CEA4D237DA2863 /* JNaturalKorean.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 		E8BD7C3AD0309A44707607AB71A5E3D2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4FB545B6EF68EED7F71047FF0BBE2B7B /* Classes */,
+				228BB5C2563E0369E2E123E0802A0529 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24FC5226E0ACC8F1D897642A2ED024E2 /* Build configuration list for PBXNativeTarget "JNaturalKorean" */;
 			buildPhases = (
-				8C0C9F1A91BDF1D83556939C58FA9069 /* Sources */,
+				B7E6C00BAD4E52E373B40CA098E6FB36 /* Sources */,
 				DF124C8C05475DBD226B962A97B66E4D /* Frameworks */,
 				F16A747D22F3688B611D5822675575CF /* Resources */,
 				4EF939405EEBE3D2C08E75DB0E35E135 /* Headers */,
@@ -404,20 +404,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C0C9F1A91BDF1D83556939C58FA9069 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A17F5E0554445C322E089A48EB8E63F /* JNaturalKorean-dummy.m in Sources */,
-				DB89700E5DC77146ABEE0A19C3F2459F /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A968AA3387530539A3D5F92F37AD36B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C5B032F3CC931DC315788AC351B78557 /* Pods-JNaturalKorean_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E6C00BAD4E52E373B40CA098E6FB36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B252797971A5C73AF915BF222EC799 /* JNaturalKorean-dummy.m in Sources */,
+				618D3719A9FB3612B404C2E593BACF15 /* JNaturalKorean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

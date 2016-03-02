@@ -7,12 +7,15 @@
 //
 import Foundation
 
-class JNaturalKorean {
+class JNaturalKorean: NSObject {
   
   let baseCode = 44032
   let choSung = 588
   let jungSung = 28
   
+  override init(){
+    super.init()
+  }
   // 초성리스트 00~18
   let choSungList = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"]
   // 중성리스트 00~20

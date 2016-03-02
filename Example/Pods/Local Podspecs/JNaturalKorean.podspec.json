@@ -1,22 +1,21 @@
 {
   "name": "JNaturalKorean",
-  "version": "0.1.0",
-  "summary": "A short description of JNaturalKorean.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/JNaturalKorean",
+  "version": "0.1.1",
+  "summary": "This supports to set Natural Korean Sentences.",
+  "homepage": "https://github.com/trillione/JNaturalKorean",
   "license": "MIT",
   "authors": {
     "trillione": "trillione1024@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/JNaturalKorean.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/trillione/JNaturalKorean.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": "Pod/Classes/JNaturalKorean.swift",
   "resource_bundles": {
     "JNaturalKorean": [
       "Pod/Assets/*.png"
