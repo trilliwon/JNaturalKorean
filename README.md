@@ -34,7 +34,7 @@ jko.getWith부사격조사_으로_로("집") // 집으로
 jko.getWith부사격조사_으로_로("학교") // 학교로
 ```
 
-
+![alt tag](https://cloud.githubusercontent.com/assets/14218787/13467222/8dbe50b0-e0e0-11e5-960f-656e028ab457.png)
 
 
 ## Requirements
