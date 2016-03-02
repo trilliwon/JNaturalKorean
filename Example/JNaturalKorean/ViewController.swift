@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JNaturalKorean
 
 class ViewController: UIViewController {
   
