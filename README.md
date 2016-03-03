@@ -1,3 +1,8 @@
+# Explanation
+
+iOS에서 자연스러운 한글**을** 구현할 수 있습니다.
+
+
 # JNaturalKorean
 
 [![CI Status](http://img.shields.io/travis/trillione/JNaturalKorean.svg?style=flat)](https://travis-ci.org/trillione/JNaturalKorean)
