@@ -1,5 +1,5 @@
 PODS:
-  - JNaturalKorean (0.2.1)
+  - JNaturalKorean (0.3.0)
 
 DEPENDENCIES:
   - JNaturalKorean (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JNaturalKorean: b008c6fdf69291c13ebc4be12f97a90b57782f77
+  JNaturalKorean: 90af474c4a82e6fb23892dbffd0c52f35137401b
 
 COCOAPODS: 0.39.0

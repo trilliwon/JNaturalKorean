@@ -1,6 +1,6 @@
 {
   "name": "JNaturalKorean",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "summary": "This supports to set Natural Korean Sentences.",
   "homepage": "https://github.com/trillione/JNaturalKorean",
   "license": "MIT",
@@ -10,7 +10,7 @@
   "source": {
     "git": "https://github.com/trillione/JNaturalKorean.git",
     "branch": "master",
-    "tag": "0.2.1"
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "8.0"
