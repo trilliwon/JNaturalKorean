@@ -8,6 +8,8 @@
 import Foundation
 
 public class JNaturalKorean: NSObject {
+    
+    static var instance: JNaturalKorean = JNaturalKorean()
   
   let baseCode = 44032
   let choSung = 588
