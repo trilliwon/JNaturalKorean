@@ -271,6 +271,10 @@ public class JNaturalKorean: NSObject {
       if isEndWithLD(word) {
         return false
       }
+      
+      if isEndWithRD(word) {
+        return false
+      }
     }
     return !engCheckList.contains(String(word.characters.last!))
   }
@@ -342,6 +346,15 @@ public class JNaturalKorean: NSObject {
   func isEndWithST(word: String) -> Bool {
     let t = getLastTwoCharacterString(word)
     if  t == "ST" || t == "st" {
+      return true
+    }
+    return false
+  }
+  
+  // 받침 없음으로
+  func isEndWithRD(word: String) -> Bool {
+    let t = getLastTwoCharacterString(word)
+    if  t == "RD" || t == "rd" {
       return true
     }
     return false
