@@ -16,7 +16,7 @@
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/JNaturalKorean.swift",
+  "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "JNaturalKorean": [
       "Pod/Assets/*.png"

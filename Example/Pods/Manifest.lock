@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JNaturalKorean: 567ad6738446d4e6e8512f7047af8cd14f9dea43
+  JNaturalKorean: b008c6fdf69291c13ebc4be12f97a90b57782f77
 
 COCOAPODS: 0.39.0
