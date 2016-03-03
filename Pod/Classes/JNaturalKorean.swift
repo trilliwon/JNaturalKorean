@@ -23,64 +23,82 @@ public class JNaturalKorean {
     
     // MARK: - 이/가
     
-    static func get_이_가_with(word: String) -> String {
+    static func get_이_가(word: String) -> String {
         if word.isHangul {
-            return "\(word)\(word.isThere종성 ? "이" : "가")"
+            return (word.isThere종성 ? "이" : "가")
         } else if word.isEnglish {
-            return "\(word)\(word.isKindOf받침 ? "이" : "가")"
+            return (word.isKindOf받침 ? "이" : "가")
         } else {
-            return word
+            return ""
         }
+    }
+    
+    static func get_이_가_with(word: String) -> String {
+        return "\(word)\(get_이_가(word))"
     }
     
     // MARK: - 은/는
     
-    static func get_은_는_with(word: String) -> String {
+    static func get_은_는(word: String) -> String {
         if word.isHangul {
-            return "\(word)\(word.isThere종성 ? "은" : "는")"
+            return (word.isThere종성 ? "은" : "는")
         } else if word.isEnglish {
-            return "\(word)\(word.isKindOf받침 ? "은" : "는")"
+            return (word.isKindOf받침 ? "은" : "는")
         } else {
-            return word
+            return ""
         }
+    }
+    
+    static func get_은_는_with(word: String) -> String {
+        return "\(word)\(get_은_는(word))"
     }
     
     // MARK: - 을/를
     
-    static func get_을_를_with(word: String) -> String {
+    static func get_을_를(word: String) -> String {
         if word.isHangul {
-            return "\(word)\(word.isThere종성 ? "을" : "를")"
+            return (word.isThere종성 ? "을" : "를")
         } else if word.isEnglish {
-            return "\(word)\(word.isKindOf받침 ? "을" : "를")"
+            return (word.isKindOf받침 ? "을" : "를")
         } else {
-            return word
+            return ""
         }
+    }
+    
+    static func get_을_를_with(word: String) -> String {
+        return "\(word)\(get_을_를(word))"
     }
     
     // MARK: - 으로/로
     
-    static func get_으로_로_with(word: String) -> String {
+    static func get_으로_로(word: String) -> String {
         if word.isHangul {
-            return "\(word)\(word.isㄹ종성 ? "로" : (word.isThere종성 ? "으로" : "로"))"
+            return (word.isㄹ종성 ? "로" : (word.isThere종성 ? "으로" : "로"))
+        } else if word.isEnglish {
+            return (word.isL ? "로" : (word.isKindOf받침 ? "으로" : "로"))
+        } else {
+            return ""
         }
-        else if word.isEnglish {
-            return "\(word)\(word.isL ? "로" : (word.isKindOf받침 ? "으로" : "로"))"
-        }
-        else {
-            return word
-        }
+    }
+    
+    static func get_으로_로_with(word: String) -> String {
+        return "\(word)\(get_으로_로(word))"
     }
     
     // MARK: - 아/야
     
-    static func get_아_야_with(word: String) -> String {
+    static func get_아_야(word: String) -> String {
         if word.isHangul {
-            return "\(word)\(word.isThere종성 ? "아" : "야")"
+            return (word.isThere종성 ? "아" : "야")
         } else if word.isEnglish {
-            return "\(word)\(word.isKindOf받침 ? "아" : "야")"
+            return (word.isKindOf받침 ? "아" : "야")
         } else {
-            return word
+            return ""
         }
+    }
+    
+    static func get_아_야_with(word: String) -> String {
+        return "\(word)\(get_아_야(word))"
     }
     
 }
