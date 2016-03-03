@@ -7,6 +7,5 @@ end
 
 target 'JNaturalKorean_Tests', :exclusive => true do
   pod 'JNaturalKorean', :path => '../'
-
   
 end

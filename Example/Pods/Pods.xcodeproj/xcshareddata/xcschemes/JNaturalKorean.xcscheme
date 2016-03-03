@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9F688157D8D217F10DBADF1E'
+               BlueprintIdentifier = '37F541D0C62D39A16DA794CA'
                BlueprintName = 'JNaturalKorean'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JNaturalKorean.framework'>
