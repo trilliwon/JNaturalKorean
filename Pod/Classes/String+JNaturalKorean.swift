@@ -33,7 +33,7 @@ extension String {
     // MARK: - 을/를
     
     public var 을_를: String {
-        return JNaturalKorean.get_을_를(self)
+        return JNaturalKorean.get_을_를_with(self)
     }
     public var 을_를_only: String {
         return JNaturalKorean.get_을_를(self)
