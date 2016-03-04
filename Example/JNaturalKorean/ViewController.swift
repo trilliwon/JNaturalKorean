@@ -52,7 +52,12 @@ class ViewController: UIViewController {
     testTextView.text.appendContentsOf("\("이 세상".아_야)!\n")
     testTextView.text.appendContentsOf("\("이 여자".아_야)!\n\n\n")
     
+    testTextView.text.appendContentsOf("\("그 여자".와_과) 함께\n")
+    testTextView.text.appendContentsOf("\("그 사람".와_과) 함께\n\n\n")
+    
     testTextView.text.appendContentsOf("\("오늘".으로_로) 부터 \("100일".이_가) 지났습니다.\n")
+    
+    
   }
   
   override func didReceiveMemoryWarning() {
