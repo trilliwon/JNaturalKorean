@@ -8,22 +8,53 @@
 
 import Foundation
 
+// MARK: - String+JNaturalKorean Public Convenient API
+
 extension String {
     
-    var 이_가: String {
-        return JNaturalKorean.instance.getWith주격조사_이_가(self)
+    // MARK: - 이/가
+    
+    public var 이_가: String {
+        return JNaturalKorean.get_이_가_with(self)
     }
-    var 은_는: String {
-        return JNaturalKorean.instance.getWith보조사_은_는(self)
+    public var 이_가_only: String {
+        return JNaturalKorean.get_이_가(self)
     }
-    var 을_를: String {
-        return JNaturalKorean.instance.getWith목적격조사_을_를(self)
+    
+    // MARK: - 은/는
+    
+    public var 은_는: String {
+        return JNaturalKorean.get_은_는_with(self)
     }
-    var 으로_로: String {
-        return JNaturalKorean.instance.getWith부사격조사_으로_로(self)
+    public var 은_는_only: String {
+        return JNaturalKorean.get_은_는(self)
     }
-    var 아_야: String {
-        return JNaturalKorean.instance.getWith호격조사_아_야(self)
+    
+    // MARK: - 을/를
+    
+    public var 을_를: String {
+        return JNaturalKorean.get_을_를_with(self)
+    }
+    public var 을_를_only: String {
+        return JNaturalKorean.get_을_를(self)
+    }
+    
+    // MARK: - 으로/로
+    
+    public var 으로_로: String {
+        return JNaturalKorean.get_으로_로_with(self)
+    }
+    public var 으로_로_only: String {
+        return JNaturalKorean.get_으로_로(self)
+    }
+    
+    // MARK: - 아/야
+    
+    public var 아_야: String {
+        return JNaturalKorean.get_아_야_with(self)
+    }
+    public var 아_야_only: String {
+        return JNaturalKorean.get_아_야(self)
     }
     
 }
