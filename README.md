@@ -83,6 +83,7 @@ pod 'JNaturalKorean'
 ## Author
 
 trillione, trillione1024@gmail.com
+ryan yoo, yoobh17@gmail.com
 
 ## License
 
