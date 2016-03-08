@@ -1,6 +1,6 @@
 # Explanation
 
-iOS에서 자연스러운 한글**을** 구현할 수 있습니다.
+iOS에서 자연스러운 한글**을** 사용할 수 있습니다.
 
 
 # JNaturalKorean
@@ -16,36 +16,14 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ```Swift
 import JNaturalKorean
 
-let jko = JNaturalKorean() 
 
-jko.getWith주격조사_이_가("그 사람") // "그 사람이"
-jko.getWith주격조사("그 여자") // "그 여자가"
-jko.getWith주격조사("Steve") // "steve가"
-jko.get주격조사("그여자") // "가"
+\("그 사람".이_가) 주인입니다.
+\("3개의 문장".을_를) 외워야 합니다.
+\("그 사람".은_는) 프로그래머입니다.
+\("이 세상"아_야)
+\("그 여자".와_과) 함께... 
+\("헤어진 날".으로_로) 부터 \("100일".이_가) 지났습니다.
 
-jko.getWith목적격조사_을_를("3개의 문장") // "3개의 문장을"
-jko.getWith목적격조사_을_를("12개의 단어") // "12개의 단어를"
-jko.getWith목적격조사("12개의 단어") // "12개의 단어를"
-jko.getWith목적격조사("words") // "words를"
-jko.get목적격조사("문장") // "을"
-
-jko.getWith보조사_은_는("그 사람") // 그 사람은
-jko.getWith보조사_은_는("그 여자") // 그 여자는
-jko.getWith보조사("그 여자") // 그 여자는
-jko.getWith보조사("the girl") // "the girl은"
-jko.get보조사("그 여자") // "는"
-
-jko.getWith호격조사_아_야("이 세상") // 이 세상아!
-jko.getWith호격조사_아_야("이 여자") // 이 여자야!
-jko.getWith호격조사("이 여자") // 이 여자야
-jko.get호격조사("하늘") // "아"
-
-jko.getWith부사격조사("오늘") // 오늘로
-jko.getWith부사격조사_으로_로("오늘") // 오늘로
-jko.getWith부사격조사_으로_로("집") // 집으로
-jko.getWith부사격조사_으로_로("학교") // 학교로
-jko.getWith부사격조사("today") // today로
-jko.get부사격조사("학교") // 로
 ```
 ---
 - 주격조사
