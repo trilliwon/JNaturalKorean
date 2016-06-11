@@ -68,7 +68,7 @@ import JNaturalKorean
 ---
 - 접속조사
     - 그사람**과** 그여자
-    - 프로그래머**와** 맥북프로 15인치 사고싶다.
+    - 프로그래머**와** 맥프레
     
 
 ## Requirements
@@ -84,7 +84,7 @@ pod 'JNaturalKorean'
 
 ## Author
 
-- trillione, trillione1024@gmail.com
+- Steve Jo, trilliwon@gmail.com
 - ryan yoo, yoobh17@gmail.com
 
 ## License
