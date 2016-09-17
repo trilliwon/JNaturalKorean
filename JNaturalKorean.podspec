@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/trilliwon/JNaturalKorean'
   s.license          = 'MIT'
   s.author           = { "trilliwon" => "trilliwon@gmail.com" }
-s.source           = { :git => "https://github.com/trilliwon/JNaturalKorean.git", branch:"master", :tag => '0.7.0' }
+s.source           = { :git => "https://github.com/trillione/JNaturalKorean.git", branch:"master", :tag => '0.7.0' }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
