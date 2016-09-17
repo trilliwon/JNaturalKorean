@@ -1,29 +1,37 @@
 //
-//  ViewController.swift
-//  JNaturalKorean
+//  Created by trilliwon on 2016. 3. 2..
+//  Copyright © 2016년 trilliwon. All rights reserved.
 //
-//  Created by Trillione on 2016. 3. 2..
-//  Copyright © 2016년 Trillione. All rights reserved.
-//
-
 import Foundation
+
+
 
 // MARK: - JNaturalKorean Public API
 
-public class JNaturalKorean {
+open class JNaturalKorean {
   
-  private static let baseCode = 44032
-  private static let choSung = 588
-  private static let jungSung = 28
+  // 한글 unicode
+  fileprivate static let baseCode = 44032
+  fileprivate static let choSung = 588 // 초성
+  fileprivate static let jungSung = 28 // 중성
   
-  private static let choSungList = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"]
-  private static let jungSungList = ["ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ"]
-  private static let jongSungList = [" ", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ", "ㅁ", "ㅂ", "ㅄ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"]
-  private static let engCheckList = ["A", "a", "E", "e", "F", "f", "G", "g", "H", "h", "I", "i", "J", "j", "O", "o", "R", "r", "S", "s", "U", "u", "V", "v", "X", "x", "Y", "y", "Z", "z"]
+  // 초성 list
+  fileprivate static let choSungList = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"]
+  
+  // 중성 list
+  fileprivate static let jungSungList = ["ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ"]
+  
+  // 종성 list
+  fileprivate static let jongSungList = [" ", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ", "ㅁ", "ㅂ", "ㅄ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"]
+  
+  // english list
+  fileprivate static let engCheckList = ["A", "a", "E", "e", "F", "f", "G", "g", "H", "h", "I", "i", "J", "j", "O", "o", "R", "r", "S", "s", "U", "u", "V", "v", "X", "x", "Y", "y", "Z", "z"]
+  
   
   // MARK: - 이/가
-  
-  public class func get_이_가(word: String) -> String {
+  // ex) - 그 사람**이** 소크라테스 입니다.
+  // ex) - 그 프로그래머**가** 실력자 입니다.
+  open class func get_이_가(_ word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "이" : "가")
     } else if word.isEnglish {
@@ -35,13 +43,16 @@ public class JNaturalKorean {
     }
   }
   
-  public class func get_이_가_with(word: String) -> String {
+  open class func get_이_가_with(_ word: String) -> String {
     return "\(word)\(get_이_가(word))"
   }
   
-  // MARK: - 은/는
   
-  public class func get_은_는(word: String) -> String {
+  
+  // MARK: - 은/는
+  // ex) - 그 사람**은** 소크라테스 입니다.
+  // ex) - 그 프로그래머**는** 실력자 입니다.
+  open class func get_은_는(_ word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "은" : "는")
     } else if word.isEnglish {
@@ -53,13 +64,16 @@ public class JNaturalKorean {
     }
   }
   
-  public class func get_은_는_with(word: String) -> String {
+  open class func get_은_는_with(_ word: String) -> String {
     return "\(word)\(get_은_는(word))"
   }
   
-  // MARK: - 을/를
   
-  public class func get_을_를(word: String) -> String {
+  
+  // MARK: - 을/를
+  // ex) - 그 사람**을** 채용합시다.
+  // ex) - 그 프로그래머**를** 채용합시다.
+  open class func get_을_를(_ word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "을" : "를")
     } else if word.isEnglish {
@@ -71,13 +85,16 @@ public class JNaturalKorean {
     }
   }
   
-  public class func get_을_를_with(word: String) -> String {
+  open class func get_을_를_with(_ word: String) -> String {
     return "\(word)\(get_을_를(word))"
   }
   
-  // MARK: - 으로/로
   
-  public class func get_으로_로(word: String) -> String {
+  
+  // MARK: - 으로/로
+  // ex) - 그 사람**으로** 보여지다.
+  // ex) - 그 프로그래머**로** 보여지다.
+  open class func get_으로_로(_ word: String) -> String {
     if word.isHangul {
       return (word.isㄹ종성 ? "로" : (word.isThere종성 ? "으로" : "로"))
     } else if word.isEnglish {
@@ -89,13 +106,15 @@ public class JNaturalKorean {
     }
   }
   
-  public class func get_으로_로_with(word: String) -> String {
+  open class func get_으로_로_with(_ word: String) -> String {
     return "\(word)\(get_으로_로(word))"
   }
   
-  // MARK: - 아/야
   
-  public class func get_아_야(word: String) -> String {
+  // MARK: - 아/야
+  // ex) - 이 인간**아**!.
+  // ex) - 이 여자**야**!.
+  open class func get_아_야(_ word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "아" : "야")
     } else if word.isEnglish {
@@ -107,12 +126,16 @@ public class JNaturalKorean {
     }
   }
   
-  public class func get_아_야_with(word: String) -> String {
+  open class func get_아_야_with(_ word: String) -> String {
     return "\(word)\(get_아_야(word))"
   }
   
+  
+  
   // MARK: - 와/과
-  public class func get_와_과(word: String) -> String {
+  // ex) - 그 여자**와** 단둘이.
+  // ex) - 이 사람**과** 둘이서.
+  open class func get_와_과(_ word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "과" : "와")
     } else if word.isEnglish {
@@ -124,17 +147,17 @@ public class JNaturalKorean {
     }
   }
   
-  public class func get_와_과_with(word: String) -> String {
+  open class func get_와_과_with(_ word: String) -> String {
     return "\(word)\(get_와_과(word))"
   }
-  
 }
 
-// MARK: - String+JNaturalKorean Private Util for Hangul
 
+
+// MARK: - String+JNaturalKorean Private Utils for 한글
 extension String {
   
-  private var isHangul: Bool {
+  fileprivate var isHangul: Bool {
     guard let lastUnicode = self.unicodeScalars.last else {
       return false
     }
@@ -142,7 +165,7 @@ extension String {
     return 44032 <= last && last <= 55199
   }
   
-  private var isThere종성: Bool {
+  fileprivate var isThere종성: Bool {
     let cBase = Int((String(self.characters.last!).unicodeScalars.first?.value)!) - JNaturalKorean.baseCode
     
     let cs = (cBase / JNaturalKorean.choSung)
@@ -154,7 +177,7 @@ extension String {
     return (JNaturalKorean.jongSungList[jos] != " ")
   }
   
-  private var isㄹ종성: Bool {
+  fileprivate var isㄹ종성: Bool {
     let cBase = Int((String(self.characters.last!).unicodeScalars.first?.value)!) - JNaturalKorean.baseCode
     
     let cs = cBase / JNaturalKorean.choSung
@@ -166,6 +189,8 @@ extension String {
     return (JNaturalKorean.jongSungList[jos] == "ㄹ")
   }
 }
+
+
 
 // MARK: - String+JNaturalKorean Private Util for English
 private enum 영어받침: String {
@@ -184,7 +209,7 @@ private enum 영어받침: String {
 
 extension String {
   
-  private var isEnglish: Bool {
+  fileprivate var isEnglish: Bool {
     guard let lastUnicode = self.unicodeScalars.last else {
       return false
     }
@@ -192,12 +217,12 @@ extension String {
     return (65 <= last && last <= 90) || (97 <= last && last <= 122)
   }
   
-  private var lastTwoCharString: String {
-    return self.characters.suffix(2).map { char in return String(char) }.reduce("", combine: +)
+  fileprivate var lastTwoCharString: String {
+    return self.characters.suffix(2).map { char in return String(char) }.reduce("", +)
   }
   
-  private var isKindOf받침: Bool {
-    guard let 영어받침 = 영어받침(rawValue: self.lastTwoCharString.uppercaseString) else {
+  fileprivate var isKindOf받침: Bool {
+    guard let 영어받침 = 영어받침(rawValue: self.lastTwoCharString.uppercased()) else {
       return !JNaturalKorean.engCheckList.contains(String(self.characters.last!))
     }
     switch 영어받침 {
@@ -208,13 +233,12 @@ extension String {
     }
   }
   
-  private var isL: Bool {
+  fileprivate var isL: Bool {
     let value = Int((String(self.characters.last!).unicodeScalars.first?.value)!)
     return (value == 76 || value == 108)
   }
 }
 
-// MARK: - String+JNaturalKorean Private Util for English
 enum Number: String {
   case ZERO  = "0"
   case ONE   = "1"
@@ -228,8 +252,11 @@ enum Number: String {
   case NINE  = "9"
 }
 
+
+
+// MARK: - String+JNaturalKorean Private Util for Number
 extension String {
-  private var isEndWithNumber: Bool {
+  fileprivate var isEndWithNumber: Bool {
     guard let lastUnicode = self.unicodeScalars.last else {
       return false
     }
@@ -237,7 +264,7 @@ extension String {
     return (48 <= last && last <= 57)
   }
   
-  private var isKineOf받침Number: Bool {
+  fileprivate var isKineOf받침Number: Bool {
     guard let lastCharacter = self.characters.last, let number = Number(rawValue: String(lastCharacter)) else {
       return false
     }
@@ -250,7 +277,7 @@ extension String {
     }
   }
   
-  private var isOne: Bool {
+  fileprivate var isOne: Bool {
     guard let lastCharacter = self.characters.last else{
       return false
     }
