@@ -11,22 +11,22 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     testTextView.text = "주격조사\n\n"
-    testTextView.text.append("\(JNaturalKorean.get_이_가_with("그 사람")) 주인입니다.\n")
-    testTextView.text.append("\(JNaturalKorean.get_이_가_with("그 여자")) 전 여친 입니다.\n")
+    testTextView.text.append("\(JNaturalKorean.get_이_가_with(word: "그 사람")) 주인입니다.\n")
+    testTextView.text.append("\(JNaturalKorean.get_이_가_with(word: "그 여자")) 전 여친 입니다.\n")
     
     testTextView.text.append("\n목적격조사\n\n")
-    testTextView.text.append("\(JNaturalKorean.get_을_를_with("3개의 문장")) 외워야 합니다.\n")
-    testTextView.text.append("\(JNaturalKorean.get_을_를_with("12개의 단어")) 외워야 합니다.\n")
+    testTextView.text.append("\(JNaturalKorean.get_을_를_with(word: "3개의 문장")) 외워야 합니다.\n")
+    testTextView.text.append("\(JNaturalKorean.get_을_를_with(word: "12개의 단어")) 외워야 합니다.\n")
     
     testTextView.text.append("\n보조사\n\n")
-    testTextView.text.append("\(JNaturalKorean.get_은_는_with("그 사람")) 프로그래머입니다.\n")
-    testTextView.text.append("\(JNaturalKorean.get_은_는_with("그 여자")) 이뻐요.\n")
+    testTextView.text.append("\(JNaturalKorean.get_은_는_with(word: "그 사람")) 프로그래머입니다.\n")
+    testTextView.text.append("\(JNaturalKorean.get_은_는_with(word: "그 여자")) 이뻐요.\n")
     
     testTextView.text.append("\n호격조사\n\n")
-    testTextView.text.append("\(JNaturalKorean.get_아_야_with("이 세상"))!\n")
-    testTextView.text.append("\(JNaturalKorean.get_아_야_with("이 여자"))!\n\n\n")
+    testTextView.text.append("\(JNaturalKorean.get_아_야_with(word: "이 세상"))!\n")
+    testTextView.text.append("\(JNaturalKorean.get_아_야_with(word: "이 여자"))!\n\n\n")
     
-    testTextView.text.append("\(JNaturalKorean.get_으로_로_with("오늘")) 부터 \(JNaturalKorean.get_이_가_with("100일")) 지났습니다.\n")
+    testTextView.text.append("\(JNaturalKorean.get_으로_로_with(word: "오늘")) 부터 \(JNaturalKorean.get_이_가_with(word: "100일")) 지났습니다.\n")
     
     testTextView.text.append("\n\n==== String+JNaturalKorean ====\n\n")
     
