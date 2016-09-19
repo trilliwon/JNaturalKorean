@@ -31,7 +31,7 @@ open class JNaturalKorean {
   // MARK: - 이/가
   // ex) - 그 사람**이** 소크라테스 입니다.
   // ex) - 그 프로그래머**가** 실력자 입니다.
-  open class func get_이_가(_ word: String) -> String {
+  open class func get_이_가(word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "이" : "가")
     } else if word.isEnglish {
@@ -43,8 +43,8 @@ open class JNaturalKorean {
     }
   }
   
-  open class func get_이_가_with(_ word: String) -> String {
-    return "\(word)\(get_이_가(word))"
+  open class func get_이_가_with(word: String) -> String {
+    return "\(word)\(get_이_가(word: word))"
   }
   
   
@@ -52,7 +52,7 @@ open class JNaturalKorean {
   // MARK: - 은/는
   // ex) - 그 사람**은** 소크라테스 입니다.
   // ex) - 그 프로그래머**는** 실력자 입니다.
-  open class func get_은_는(_ word: String) -> String {
+  open class func get_은_는(word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "은" : "는")
     } else if word.isEnglish {
@@ -64,8 +64,8 @@ open class JNaturalKorean {
     }
   }
   
-  open class func get_은_는_with(_ word: String) -> String {
-    return "\(word)\(get_은_는(word))"
+  open class func get_은_는_with(word: String) -> String {
+    return "\(word)\(get_은_는(word: word))"
   }
   
   
@@ -73,7 +73,7 @@ open class JNaturalKorean {
   // MARK: - 을/를
   // ex) - 그 사람**을** 채용합시다.
   // ex) - 그 프로그래머**를** 채용합시다.
-  open class func get_을_를(_ word: String) -> String {
+  open class func get_을_를(word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "을" : "를")
     } else if word.isEnglish {
@@ -85,8 +85,8 @@ open class JNaturalKorean {
     }
   }
   
-  open class func get_을_를_with(_ word: String) -> String {
-    return "\(word)\(get_을_를(word))"
+  open class func get_을_를_with(word: String) -> String {
+    return "\(word)\(get_을_를(word: word))"
   }
   
   
@@ -94,7 +94,7 @@ open class JNaturalKorean {
   // MARK: - 으로/로
   // ex) - 그 사람**으로** 보여지다.
   // ex) - 그 프로그래머**로** 보여지다.
-  open class func get_으로_로(_ word: String) -> String {
+  open class func get_으로_로(word: String) -> String {
     if word.isHangul {
       return (word.isㄹ종성 ? "로" : (word.isThere종성 ? "으로" : "로"))
     } else if word.isEnglish {
@@ -106,15 +106,15 @@ open class JNaturalKorean {
     }
   }
   
-  open class func get_으로_로_with(_ word: String) -> String {
-    return "\(word)\(get_으로_로(word))"
+  open class func get_으로_로_with(word: String) -> String {
+    return "\(word)\(get_으로_로(word: word))"
   }
   
   
   // MARK: - 아/야
   // ex) - 이 인간**아**!.
   // ex) - 이 여자**야**!.
-  open class func get_아_야(_ word: String) -> String {
+  open class func get_아_야(word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "아" : "야")
     } else if word.isEnglish {
@@ -126,8 +126,8 @@ open class JNaturalKorean {
     }
   }
   
-  open class func get_아_야_with(_ word: String) -> String {
-    return "\(word)\(get_아_야(word))"
+  open class func get_아_야_with(word: String) -> String {
+    return "\(word)\(get_아_야(word: word))"
   }
   
   
@@ -135,7 +135,7 @@ open class JNaturalKorean {
   // MARK: - 와/과
   // ex) - 그 여자**와** 단둘이.
   // ex) - 이 사람**과** 둘이서.
-  open class func get_와_과(_ word: String) -> String {
+  open class func get_와_과(word: String) -> String {
     if word.isHangul {
       return (word.isThere종성 ? "과" : "와")
     } else if word.isEnglish {
@@ -147,8 +147,8 @@ open class JNaturalKorean {
     }
   }
   
-  open class func get_와_과_with(_ word: String) -> String {
-    return "\(word)\(get_와_과(word))"
+  open class func get_와_과_with(word: String) -> String {
+    return "\(word)\(get_와_과(word: word))"
   }
 }
 
@@ -172,8 +172,6 @@ extension String {
     let jus = (cBase - (JNaturalKorean.choSung * cs)) / JNaturalKorean.jungSung
     let jos = (cBase - (JNaturalKorean.choSung * cs) - (JNaturalKorean.jungSung * jus))
     
-    JNaturalKorean.jongSungList[jos]
-    
     return (JNaturalKorean.jongSungList[jos] != " ")
   }
   
@@ -183,8 +181,6 @@ extension String {
     let cs = cBase / JNaturalKorean.choSung
     let jus = (cBase - (JNaturalKorean.choSung * cs)) / JNaturalKorean.jungSung
     let jos = (cBase - (JNaturalKorean.choSung * cs) - (JNaturalKorean.jungSung * jus))
-    
-    JNaturalKorean.jongSungList[jos]
     
     return (JNaturalKorean.jongSungList[jos] == "ㄹ")
   }
