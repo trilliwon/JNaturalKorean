@@ -73,6 +73,9 @@ import JNaturalKorean
 
 ## Requirements
 
+iOS 9.0+
+Swift 3.0
+
 ## Installation
 
 JNaturalKorean is available through [CocoaPods](http://cocoapods.org). To install
