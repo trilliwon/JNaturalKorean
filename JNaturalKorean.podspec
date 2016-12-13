@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.summary          = 'This supports to set Natural Korean Sentences.'
   s.homepage         = 'https://github.com/trilliwon/JNaturalKorean'
   s.license          = 'MIT'
-  s.author           = { "trilliwon" => "trilliwon@gmail.com" }
+  s.author           = { "trillione" => "trilliwon@gmail.com" }
   s.source           = { :git => "https://github.com/trilliwon/JNaturalKorean.git", branch:"master", :tag => '1.0.1' }
 
   s.platform     = :ios, '8.0'
