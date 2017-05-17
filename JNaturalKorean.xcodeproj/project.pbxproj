@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E30977C21ECC8CC60010E230 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E30977C11ECC8CC60010E230 /* README.md */; };
 		E3711A391ECC6E3D002C4C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3711A381ECC6E3D002C4C57 /* AppDelegate.swift */; };
 		E3711A3B1ECC6E3D002C4C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3711A3A1ECC6E3D002C4C57 /* ViewController.swift */; };
 		E3711A3E1ECC6E3D002C4C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3711A3C1ECC6E3D002C4C57 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E30977C11ECC8CC60010E230 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E3711A351ECC6E3D002C4C57 /* JNaturalKorean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JNaturalKorean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3711A381ECC6E3D002C4C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3711A3A1ECC6E3D002C4C57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E3711A5D1ECC6EDE002C4C57 /* JNaturalKorean.podspec */,
+				E30977C11ECC8CC60010E230 /* README.md */,
 			);
 			name = "Podspec metadata";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				E3711A5A1ECC6E82002C4C57 /* JNaturalKorean.swift in Sources */,
 				E3711A5B1ECC6E82002C4C57 /* String+JNaturalKorean.swift in Sources */,
+				E30977C21ECC8CC60010E230 /* README.md in Sources */,
 				E3711A3B1ECC6E3D002C4C57 /* ViewController.swift in Sources */,
 				E3711A391ECC6E3D002C4C57 /* AppDelegate.swift in Sources */,
 			);
@@ -442,6 +446,7 @@
 				E3711A541ECC6E3D002C4C57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3711A551ECC6E3D002C4C57 /* Build configuration list for PBXNativeTarget "JNaturalKoreanTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +455,7 @@
 				E3711A571ECC6E3D002C4C57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

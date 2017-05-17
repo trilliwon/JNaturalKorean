@@ -6,14 +6,14 @@ iOS에서 자연스러운 한글**을** 사용할 수 있습니다.
 
 # JNaturalKorean
 
-[![CI Status](http://img.shields.io/travis/trillione/JNaturalKorean.svg?style=flat)](https://travis-ci.org/trillione/JNaturalKorean)
 [![Version](https://img.shields.io/cocoapods/v/JNaturalKorean.svg?style=flat)](http://cocoapods.org/pods/JNaturalKorean)
 [![License](https://img.shields.io/cocoapods/l/JNaturalKorean.svg?style=flat)](http://cocoapods.org/pods/JNaturalKorean)
 [![Platform](https://img.shields.io/cocoapods/p/JNaturalKorean.svg?style=flat)](http://cocoapods.org/pods/JNaturalKorean)
+[![codecov](https://codecov.io/gh/trilliwon/JNaturalKorean/branch/master/graph/badge.svg)](https://codecov.io/gh/trilliwon/JNaturalKorean)
+[![Build Status](https://travis-ci.org/trilliwon/JNaturalKorean.svg?branch=master)](https://travis-ci.org/trilliwon/JNaturalKorean)
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 ```Swift
 import JNaturalKorean
 
@@ -88,7 +88,7 @@ pod 'JNaturalKorean'
 
 ## Author
 
-- Steve Jo, trilliwon@gmail.com
+- won, trilliwon@gmail.com
 - ryan yoo, yoobh17@gmail.com
 
 ## License
