@@ -1,6 +1,0 @@
-framework module JNaturalKorean {
-  umbrella header "JNaturalKorean-umbrella.h"
-
-  export *
-  module * { export * }
-}

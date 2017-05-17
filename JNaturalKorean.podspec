@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'JNaturalKorean'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
   s.pod_target_xcconfig = {
     'SWIFT_VERSION' => '3.0'
   }
@@ -9,12 +9,12 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/trilliwon/JNaturalKorean'
   s.license          = 'MIT'
   s.author           = { "trillione" => "trilliwon@gmail.com" }
-  s.source           = { :git => "https://github.com/trilliwon/JNaturalKorean.git", branch:"master", :tag => '1.0.1' }
+  s.source           = { :git => "https://github.com/trilliwon/JNaturalKorean.git", branch:"master", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Source/*'
   
 end
 
