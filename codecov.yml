@@ -10,7 +10,7 @@ coverage:
   notify:
     slack:
       default:
-        url: "https://hooks.slack.com/services/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"
+        url: "https://hooks.slack.com/services/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"
         threshold: 1%
         only_pulls: false
         branches: null
