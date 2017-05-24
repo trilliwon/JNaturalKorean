@@ -12,10 +12,8 @@ coverage:
       default:
         url: "https://hooks.slack.com/services/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"
         threshold: 1%
-        branches: null  # all branches by default
-        message: "Coverage {{changed}} for {{owner}}/{{repo}}"  # customize the message
-        attachments: "sunburst, diff"
         only_pulls: false
+        branches: null
         flags: null
         paths: null
 
