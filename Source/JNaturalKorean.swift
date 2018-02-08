@@ -166,7 +166,7 @@ extension String {
   }
   
   fileprivate var isThere종성: Bool {
-    let cBase = Int((String(self.characters.last!).unicodeScalars.first?.value)!) - JNaturalKorean.baseCode
+    let cBase = Int((String(self.last!).unicodeScalars.first?.value)!) - JNaturalKorean.baseCode
     
     let cs = (cBase / JNaturalKorean.choSung)
     let jus = (cBase - (JNaturalKorean.choSung * cs)) / JNaturalKorean.jungSung
@@ -176,7 +176,7 @@ extension String {
   }
   
   fileprivate var isㄹ종성: Bool {
-    let cBase = Int((String(self.characters.last!).unicodeScalars.first?.value)!) - JNaturalKorean.baseCode
+    let cBase = Int((String(self.last!).unicodeScalars.first?.value)!) - JNaturalKorean.baseCode
     
     let cs = cBase / JNaturalKorean.choSung
     let jus = (cBase - (JNaturalKorean.choSung * cs)) / JNaturalKorean.jungSung
@@ -214,12 +214,12 @@ extension String {
   }
   
   fileprivate var lastTwoCharString: String {
-    return self.characters.suffix(2).map { char in return String(char) }.reduce("", +)
+    return self.suffix(2).map { char in return String(char) }.reduce("", +)
   }
   
   fileprivate var isKindOf받침: Bool {
     guard let 영어받침 = 영어받침(rawValue: self.lastTwoCharString.uppercased()) else {
-      return !JNaturalKorean.engCheckList.contains(String(self.characters.last!))
+      return !JNaturalKorean.engCheckList.contains(String(self.last!))
     }
     switch 영어받침 {
     case .NG, .LE, .ME:
@@ -230,7 +230,7 @@ extension String {
   }
   
   fileprivate var isL: Bool {
-    let value = Int((String(self.characters.last!).unicodeScalars.first?.value)!)
+    let value = Int((String(self.last!).unicodeScalars.first?.value)!)
     return (value == 76 || value == 108)
   }
 }
@@ -261,7 +261,7 @@ extension String {
   }
   
   fileprivate var isKineOf받침Number: Bool {
-    guard let lastCharacter = self.characters.last, let number = Number(rawValue: String(lastCharacter)) else {
+    guard let lastCharacter = self.last, let number = Number(rawValue: String(lastCharacter)) else {
       return false
     }
 
@@ -274,7 +274,7 @@ extension String {
   }
   
   fileprivate var isOne: Bool {
-    guard let lastCharacter = self.characters.last else{
+    guard let lastCharacter = self.last else{
       return false
     }
     return ("1" == String(lastCharacter))
