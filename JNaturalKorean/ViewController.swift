@@ -64,4 +64,3 @@ class ViewController: UIViewController {
 		textView.text.append("\("오늘".으로_로) 부터 \("100일".이_가) 지났습니다.\n")
 	}
 }
-
