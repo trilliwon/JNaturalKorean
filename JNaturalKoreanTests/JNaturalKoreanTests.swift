@@ -1,11 +1,3 @@
-//
-//  JNaturalKoreanTests.swift
-//  JNaturalKoreanTests
-//
-//  Created by Won on 17/05/2017.
-//  Copyright © 2017 Won. All rights reserved.
-//
-
 import XCTest
 @testable import JNaturalKorean
 
