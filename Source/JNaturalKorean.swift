@@ -195,6 +195,7 @@ private enum 영어받침: String {
     case ST = "ST"
     case RD = "RD"
     case LD = "LD"
+    case PE = "PE"
 }
 
 extension String {
@@ -216,7 +217,7 @@ extension String {
             return !JNaturalKorean.engCheckList.contains(String(self.last!))
         }
         switch 영어받침 {
-        case .NG, .LE, .ME:
+        case .NG, .LE, .ME, .PE:
             return true
         case .ND, .ED, .LT, .ST, .LD, .RD:
             return false

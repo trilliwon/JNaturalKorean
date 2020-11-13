@@ -36,5 +36,7 @@ class ViewController: UIViewController {
 		textView.text.append("\("010-0000-1203".으로_로) 인증번호가 발송됩니다.\n\n\n")
 
 		textView.text.append("\("오늘".으로_로) 부터 \("100일".이_가) 지났습니다.\n")
+
+        textView.text.append("\("tripe".은_는) 어디로 갑니까?\n")
 	}
 }
