@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "JNaturalKorean",
+        "repositoryURL": "https://github.com/trilliwon/JNaturalKorean",
+        "state": {
+          "branch": null,
+          "revision": "2dedeb43afdd64a1933a9e8be7e41f8fc354098d",
+          "version": "2.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

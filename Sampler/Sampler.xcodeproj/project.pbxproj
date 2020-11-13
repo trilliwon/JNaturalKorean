@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,13 @@
 		E3333002255E5F5C00FDCBB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3333001255E5F5C00FDCBB2 /* ContentView.swift */; };
 		E3333004255E5F5D00FDCBB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3333003255E5F5D00FDCBB2 /* Assets.xcassets */; };
 		E3333007255E5F5D00FDCBB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3333006255E5F5D00FDCBB2 /* Preview Assets.xcassets */; };
+		E3333012255E640E00FDCBB2 /* JNaturalKorean in Frameworks */ = {isa = PBXBuildFile; productRef = E3333011255E640E00FDCBB2 /* JNaturalKorean */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3332FFC255E5F5C00FDCBB2 /* Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3332FFF255E5F5C00FDCBB2 /* SamplerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerApp.swift; sourceTree = "<group>"; };
-		E3333001255E5F5C00FDCBB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3333001255E5F5C00FDCBB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Sampler/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		E3333003255E5F5D00FDCBB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3333006255E5F5D00FDCBB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E3333008255E5F5D00FDCBB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3333012255E640E00FDCBB2 /* JNaturalKorean in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = Sampler;
+			packageProductDependencies = (
+				E3333011255E640E00FDCBB2 /* JNaturalKorean */,
+			);
 			productName = Sampler;
 			productReference = E3332FFC255E5F5C00FDCBB2 /* Sampler.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = E3332FF3255E5F5C00FDCBB2;
+			packageReferences = (
+				E3333010255E640E00FDCBB2 /* XCRemoteSwiftPackageReference "JNaturalKorean" */,
+			);
 			productRefGroup = E3332FFD255E5F5C00FDCBB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3333010255E640E00FDCBB2 /* XCRemoteSwiftPackageReference "JNaturalKorean" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trilliwon/JNaturalKorean";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3333011255E640E00FDCBB2 /* JNaturalKorean */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3333010255E640E00FDCBB2 /* XCRemoteSwiftPackageReference "JNaturalKorean" */;
+			productName = JNaturalKorean;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3332FF4255E5F5C00FDCBB2 /* Project object */;
 }
