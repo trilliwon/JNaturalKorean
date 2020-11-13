@@ -80,6 +80,12 @@ import JNaturalKorean
 
 ## Installation
 
+### Swift Package Manager
+
+- Xcode > File > Swift Packages > Add Swift Dependency...
+
+### CocoaPods
+
 JNaturalKorean is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
