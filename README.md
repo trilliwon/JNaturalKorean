@@ -74,9 +74,9 @@ import JNaturalKorean
 
 ## Requirements
 
-- iOS 8.0+
-- Swift 4.0+
-- Xcode 9.2+
+- iOS 11.0+
+- Swift 5.2+
+- Xcode 12.0+
 
 ## Installation
 
