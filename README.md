@@ -6,7 +6,7 @@ iOS에서 자연스러운 한글**을** 사용할 수 있습니다.
 
 # JNaturalKorean
 
-[![Version](https://img.shields.io/cocoapods/v/JNaturalKorean.svg?style=flat)](http://cocoapods.org/pods/JNaturalKorean)
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat"></a>
 [![License](https://img.shields.io/cocoapods/l/JNaturalKorean.svg?style=flat)](http://cocoapods.org/pods/JNaturalKorean)
 
 ## Usage
