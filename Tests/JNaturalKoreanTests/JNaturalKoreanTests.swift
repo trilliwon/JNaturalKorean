@@ -67,6 +67,22 @@ final class JNaturalKoreanTests: XCTestCase {
         XCTAssertEqual("programmer".으로_로, "programmer로")
         XCTAssertEqual("programmer".아_야, "programmer야")
         XCTAssertEqual("programmer".와_과, "programmer와")
+        
+        // さくら 사쿠라
+        XCTAssertEqual("さくら".이_가, "さくら가")
+        XCTAssertEqual("さくら".은_는, "さくら는")
+        XCTAssertEqual("さくら".을_를, "さくら를")
+        XCTAssertEqual("さくら".으로_로, "さくら로")
+        XCTAssertEqual("さくら".아_야, "さくら야")
+        XCTAssertEqual("さくら".와_과, "さくら와")
+        
+        // キムさん 김 상
+        XCTAssertEqual("キムさん".이_가, "キムさん이")
+        XCTAssertEqual("キムさん".은_는, "キムさん은")
+        XCTAssertEqual("キムさん".을_를, "キムさん을")
+        XCTAssertEqual("キムさん".으로_로, "キムさん으로")
+        XCTAssertEqual("キムさん".아_야, "キムさん아")
+        XCTAssertEqual("キムさん".와_과, "キムさん과")
     }
 
     /// Returns path to the built products directory.
