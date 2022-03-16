@@ -35,7 +35,9 @@ open class JNaturalKorean {
             return (word.isKindOf받침 ? "이" : "가")
         } else if word.isEndWithNumber {
             return (word.isKineOf받침Number ? "이" : "가")
-        }else {
+        } else if word.isJapanese {
+            return (word.is일본어받침 ? "이" : "가")
+        } else {
             return ""
         }
     }
@@ -56,7 +58,9 @@ open class JNaturalKorean {
             return (word.isKindOf받침 ? "은" : "는")
         } else if word.isEndWithNumber {
             return (word.isKineOf받침Number ? "은" : "는")
-        }else {
+        } else if word.isJapanese {
+            return (word.is일본어받침 ? "은" : "는")
+        } else {
             return ""
         }
     }
@@ -77,7 +81,9 @@ open class JNaturalKorean {
             return (word.isKindOf받침 ? "을" : "를")
         } else if word.isEndWithNumber {
             return (word.isKineOf받침Number ? "을" : "를")
-        }else {
+        } else if word.isJapanese {
+            return (word.is일본어받침 ? "을" : "를")
+        } else {
             return ""
         }
     }
@@ -98,7 +104,9 @@ open class JNaturalKorean {
             return (word.isL ? "로" : (word.isKindOf받침 ? "으로" : "로"))
         } else if word.isEndWithNumber {
             return (word.isOne ? "로" : (word.isKineOf받침Number ? "으로" : "로"))
-        }else {
+        } else if word.isJapanese {
+            return (word.is일본어받침 ? "으로" : "로")
+        } else {
             return ""
         }
     }
@@ -118,7 +126,9 @@ open class JNaturalKorean {
             return (word.isKindOf받침 ? "아" : "야")
         } else if word.isEndWithNumber {
             return (word.isKineOf받침Number ? "아" : "야")
-        }else {
+        } else if word.isJapanese {
+            return (word.is일본어받침 ? "아" : "야")
+        } else {
             return ""
         }
     }
@@ -139,7 +149,9 @@ open class JNaturalKorean {
             return (word.isKindOf받침 ? "과" : "와")
         } else if word.isEndWithNumber {
             return (word.isKineOf받침Number ? "과" : "와")
-        }else {
+        } else if word.isJapanese {
+            return (word.is일본어받침 ? "과" : "와")
+        } else {
             return ""
         }
     }
@@ -227,6 +239,25 @@ extension String {
     fileprivate var isL: Bool {
         let value = Int((String(self.last!).unicodeScalars.first?.value)!)
         return (value == 76 || value == 108)
+    }
+}
+
+// MARK: - String+JNaturalKorean Private Utils for 일본어
+extension String {
+    fileprivate var isJapanese: Bool {
+        guard let lastUnicode = self.unicodeScalars.last else {
+            return false
+        }
+        let last = Int(lastUnicode.value)
+        return 12352 <= last && last <= 12799 // 12352~12447(히라가나), 12448~12799(가타가나)
+    }
+    
+    fileprivate var lastCharString: String {
+        return self.suffix(1).map { char in return String(char) }.reduce("", +)
+    }
+    
+    fileprivate var is일본어받침: Bool {
+        return (self.lastCharString == "ん") || (self.lastCharString == "ン")
     }
 }
 
