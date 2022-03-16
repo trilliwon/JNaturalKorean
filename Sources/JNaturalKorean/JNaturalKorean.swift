@@ -53,16 +53,12 @@ open class JNaturalKorean {
     // ex) - 그 프로그래머**는** 실력자 입니다.
     open class func get_은_는(word: String) -> String {
         if word.isHangul {
-            print("isHangule: \(word)")
             return (word.isThere종성 ? "은" : "는")
         } else if word.isEnglish {
-            print("isEnglish: \(word)")
             return (word.isKindOf받침 ? "은" : "는")
         } else if word.isEndWithNumber {
-            print("inEndWithNumber: \(word)")
             return (word.isKineOf받침Number ? "은" : "는")
         } else if word.isJapanese {
-            print("is일본어")
             return (word.is일본어받침 ? "은" : "는")
         } else {
             return ""
