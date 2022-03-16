@@ -2,7 +2,7 @@
 
 iOS에서 자연스러운 한글**을** 사용할 수 있습니다.
 
-영어, 전화번호 **조사**도 지원됩니다.
+영어, 전화번호, 일본어 **조사**도 지원됩니다.
 
 # JNaturalKorean
 
@@ -32,6 +32,10 @@ import JNaturalKorean
 
 - `\("010-0000-7330".으로_로)` => 7330**으로**
 - `\("개발을 시작한 날".으로_로) 부터 \("100일".이_가) 지났습니다.` => 날**로** 부터 100일**이** ...
+
+- `"さくら".이_가` => "さくら가"
+- `"キムさん".이_가` => "キムさん이"
+- 
 
 ---
 
@@ -92,11 +96,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'JNaturalKorean'
 ```
-
-## Author
-
-- won, trilliwon@gmail.com
-- ryan yoo, yoobh17@gmail.com
 
 ## License
 
